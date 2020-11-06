@@ -1,0 +1,162 @@
+fastlane_version "2.66.2"
+
+default_platform(:ios)
+
+platform :ios do
+
+  lane :tests do
+
+    libraries
+    
+    run_tests(
+	     scheme: "ECHO",
+	     sdk: "iphonesimulator",
+	     devices: ["iPhone X"],
+	     clean: true
+    )
+
+  end
+
+  lane :network_tests do 
+
+    config_project_for_network_test
+
+    libraries
+    
+    run_tests(
+       scheme: "ECHONetworkTests",
+       sdk: "iphonesimulator",
+       devices: ["iPhone X"],
+       clean: true
+    )
+
+  end
+
+  lane :release do
+
+    version_number = get_next_version
+    print version_number
+
+    change_configs_for_release(version_number: version_number)
+
+    #TODO: Need valid config file
+    #config_documentation
+
+    commit_to_master(version_number: version_number)
+    push_to_master
+    tag_setup(version_number: version_number)
+    push_to_release
+
+  end
+
+  private_lane :libraries do 
+
+    carthage(
+      command: "update",
+      platform: "iOS"
+    )
+
+  end
+
+  private_lane :config_project_for_network_test do
+
+    constants_keys = ENV['CONSTANTS_KEYS']
+    constants_array = constants_keys.split(' ')
+
+    first_constant_key = constants_array.first
+    first_constant_value = ENV[first_constant_key]
+
+    sh("./appendConstantsToConfig.sh #{first_constant_key} #{first_constant_value} true")
+
+    for i in 1..constants_array.count-1
+      constant_key = constants_array[i]
+      constant_value = ENV[constant_key]
+
+      sh("./appendConstantsToConfig.sh #{constant_key} #{constant_value}")
+    end
+
+  end
+
+  private_lane :change_configs_for_release do |options|
+
+    increment_version_number(
+      version_number: options[:version_number]
+    )
+
+    version_bump_podspec(
+      path: ENV['PODSPEC_NAME'],
+      version_number: options[:version_number]
+    )
+
+  end
+
+  lane :config_documentation do
+
+    jazzy(
+      config: ENV['JAZZY_CONFIG_PATH']
+    )
+
+  end
+
+  private_lane :commit_to_master do |options|
+
+    git_add(
+      path: "docs/*"
+    )
+
+    git_commit(path: ["ECHO.podspec",
+                      "ECHO/Info.plist",
+                      "ECHOTests/Info.plist",
+                      "docs/*"], 
+              message: "Version: #{options[:version_number]}")
+
+  end
+
+  private_lane :push_to_master do 
+
+    push_to_git_remote(
+      remote_branch: "master"
+    )
+
+  end
+
+  private_lane :push_to_release do
+
+    push_to_git_remote(
+      remote_branch: "release"
+    )
+    
+  end
+
+  private_lane :tag_setup do |options|
+
+    add_git_tag(
+      tag: options[:version_number]
+    )
+
+    push_git_tags
+
+  end 
+
+  private_lane :get_next_version do
+
+    sh('git pull origin master --tags')
+    get_tags_command = "git tag -l #{ENV['VERSION_MAIN_PART']}* | sort -V"
+    tags = sh(get_tags_command)
+
+    tags_array = tags.split
+
+    if tags_array.count == 0
+      "#{ENV['VERSION_MAIN_PART']}0"
+    else
+      last_tag = tags_array.last
+      tag_numbers_array = last_tag.split('.')
+      last_tag_number = tag_numbers_array.last
+      new_last_tag_number = last_tag_number.to_i + 1
+
+      "#{ENV['VERSION_MAIN_PART']}#{new_last_tag_number}"
+    end
+
+  end
+
+end

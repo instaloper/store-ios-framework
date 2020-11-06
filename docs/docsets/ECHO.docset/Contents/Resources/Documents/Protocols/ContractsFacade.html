@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ContractsFacade Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/ContractsFacade" class="dashAnchor"></a>
+    <a title="ContractsFacade Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">ECHO Docs</a> (31% documented)</p>
+        <p class="header-right"><a href="https://github.com/echoprotocol/echo-ios-framework"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">ECHO Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ContractsFacade Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AbiArgumentCoderImp.html">AbiArgumentCoderImp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AbiCoderImp.html">AbiCoderImp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AbiFunctionEntries.html">AbiFunctionEntries</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:4ECHO21AbiFunctionInputModelC">AbiFunctionInputModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:4ECHO22AbiFunctionOutputModelC">AbiFunctionOutputModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AddressKeysContainer.html">AddressKeysContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AssetsFacadeImp.html">AssetsFacadeImp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AuthentificationFacadeImp.html">AuthentificationFacadeImp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configurator.html">Configurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ContractsFacadeImp.html">ContractsFacadeImp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CryptoCoreImp.html">CryptoCoreImp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomOperationsFacadeImp.html">CustomOperationsFacadeImp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ECHO.html">ECHO</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ECHOKeychainEd25519.html">ECHOKeychainEd25519</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ECHOKeychainSecp256k1.html">ECHOKeychainSecp256k1</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ECHONetwork.html">ECHONetwork</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ECHOQueue.html">ECHOQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EthFacadeImp.html">EthFacadeImp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeeFacadeImp.html">FeeFacadeImp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InformationFacadeImp.html">InformationFacadeImp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NoticeEventProxyImp.html">NoticeEventProxyImp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:4ECHO15RevealFacadeImpC">RevealFacadeImp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SHA3.html">SHA3</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SHA3/Variant.html">– Variant</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Settings.html">Settings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SocketMessengerImp.html">SocketMessengerImp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SubscriptionFacadeImp.html">SubscriptionFacadeImp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Transaction.html">Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionFacadeImp.html">TransactionFacadeImp</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/API.html">API</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AbiFunctionType.html">AbiFunctionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AbiParameterType.html">AbiParameterType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AssetOptionIssuerPermissions.html">AssetOptionIssuerPermissions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ContractResultEnum.html">ContractResultEnum</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ContractStructEnum.html">ContractStructEnum</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ECHOError.html">ECHOError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ECHONetworkPrefix.html">ECHONetworkPrefix</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ECHOResponseResult.html">ECHOResponseResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EchorandPrefix.html">EchorandPrefix</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorOrResult.html">ErrorOrResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FeeType.html">FeeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IntOrDict.html">IntOrDict</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IntOrString.html">IntOrString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/KeychainType.html">KeychainType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ObjectSpace.html">ObjectSpace</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ObjectType.html">ObjectType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OperationCodingKeys.html">OperationCodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OperationType.html">OperationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PassOrWif.html">PassOrWif</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Result.html">Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SocketConnectionState.html">SocketConnectionState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SocketOperationType.html">SocketOperationType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/AnyError.html">AnyError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/ECHOObject.html">ECHOObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt32.html">UInt32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt64.html">UInt64</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AbiArgumentCoder.html">AbiArgumentCoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AbiCoder.html">AbiCoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AssetsFacade.html">AssetsFacade</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AuthentificationFacade.html">AuthentificationFacade</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BaseOperation.html">BaseOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:4ECHO12BytesCodableP">BytesCodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:4ECHO14BytesDecodableP">BytesDecodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BytesEncodable.html">BytesEncodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ContractsFacade.html">ContractsFacade</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CryptoCoreComponent.html">CryptoCoreComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CustomOperationsFacade.html">CustomOperationsFacade</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CustomSocketOperation.html">CustomSocketOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:4ECHO11ECHOCodableP">ECHOCodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ECHOKeychain.html">ECHOKeychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EthFacade.html">EthFacade</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FeeFacade.html">FeeFacade</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InformationFacade.html">InformationFacade</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:4ECHO11JSONCodableP">JSONCodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/JSONDecodable.html">JSONDecodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/JSONEncodable.html">JSONEncodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NoticeActionHandler.html">NoticeActionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NoticeEventDelegate.html">NoticeEventDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NoticeEventDelegateHandler.html">NoticeEventDelegateHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:4ECHO16NoticeEventProxyP">NoticeEventProxy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SocketCoreComponent.html">SocketCoreComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SocketMessenger.html">SocketMessenger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SocketOperation.html">SocketOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Startable.html">Startable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SubscribeAccountDelegate.html">SubscribeAccountDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SubscribeBlockDelegate.html">SubscribeBlockDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SubscribeContractLogsDelegate.html">SubscribeContractLogsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SubscribeContractsDelegate.html">SubscribeContractsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SubscribeDynamicGlobalPropertiesDelegate.html">SubscribeDynamicGlobalPropertiesDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SubscriptionFacade.html">SubscriptionFacade</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TransactionFacade.html">TransactionFacade</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/APIOption.html">APIOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AbiFunctionModel.html">AbiFunctionModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AbiTypeValueInputModel.html">AbiTypeValueInputModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AbiTypeValueOutputModel.html">AbiTypeValueOutputModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Account.html">Account</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountAuthority.html">AccountAuthority</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountBalance.html">AccountBalance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountCreateOperation.html">AccountCreateOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountOptions.html">AccountOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountUpdateOperation.html">AccountUpdateOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Address.html">Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AddressAuthority.html">AddressAuthority</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Asset.html">Asset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AssetAmount.html">AssetAmount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AssetOptions.html">AssetOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:4ECHO14AssetsServicesV">AssetsServices</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Authority.html">Authority</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Base58.html">Base58</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BitassetOptions.html">BitassetOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Block.html">Block</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CallContractFee.html">CallContractFee</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CallContractOperation.html">CallContractOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Contract.html">Contract</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContractHistory.html">ContractHistory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContractInfo.html">ContractInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContractLog.html">ContractLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContractResultEVM.html">ContractResultEVM</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContractResultx86.html">ContractResultx86</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContractStructEVM.html">ContractStructEVM</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContractStructx86.html">ContractStructx86</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContractTransferOperation.html">ContractTransferOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:4ECHO23ContractsFacadeServicesV">ContractsFacadeServices</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CreateAssetOperation.html">CreateAssetOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CreateContractOperation.html">CreateContractOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CurrentFeesGlobalPropertiesParameters.html">CurrentFeesGlobalPropertiesParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:4ECHO30CustomOperationsFacadeServicesV">CustomOperationsFacadeServices</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DepositEth.html">DepositEth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DynamicGlobalProperties.html">DynamicGlobalProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ECHODirectResponse.html">ECHODirectResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ECHONotification.html">ECHONotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ECHOResponseError.html">ECHOResponseError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ETHAddressValidator.html">ETHAddressValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EchorandConfig.html">EchorandConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EthAddress.html">EthAddress</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:4ECHO17EthFacadeServicesV">EthFacadeServices</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EthMethod.html">EthMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ExecRes.html">ExecRes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Extensions.html">Extensions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:4ECHO17FeeFacadeServicesV">FeeFacadeServices</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GasPriceGlobalProperties.html">GasPriceGlobalProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GenerateEthAddressOperation.html">GenerateEthAddressOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GlobalProperties.html">GlobalProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GlobalPropertiesParameters.html">GlobalPropertiesParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HistoryItem.html">HistoryItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IssueAssetOperation.html">IssueAssetOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Log.html">Log</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OptionalValue.html">OptionalValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Options.html">Options</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Price.html">Price</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SidechainBurnOperation.html">SidechainBurnOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SidechainConfig.html">SidechainConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SidechainIssueOperation.html">SidechainIssueOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Statistics.html">Statistics</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TrReceipt.html">TrReceipt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:4ECHO25TransactionFacadeServicesV">TransactionFacadeServices</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransferOperation.html">TransferOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UserAccount.html">UserAccount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WithdrawalEth.html">WithdrawalEth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WithdrawalEthOperation.html">WithdrawalEthOperation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:4ECHO10Completiona">Completion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:4ECHO10IntOrDictsa">IntOrDicts</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:4ECHO12IntOrStringsa">IntOrStrings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:4ECHO16InterfaceFacadesa">InterfaceFacades</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:4ECHO13NoticeHandlera">NoticeHandler</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ContractsFacade</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ContractsFacade</span></code></pre>
+
+                </div>
+              </div>
+            <p>Encapsulates logic, associated with various blockchain smart contract processes</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4ECHO15ContractsFacadeP14createContract17registrarNameOrId08passwordH3Wif05assetI06amount0L6ForFee8byteCode014supportedAssetI011ethAccuracy10parameters10completion13noticeHandlerySS_AA04PasshK0OSSSuSgSSSgSSASSbSayAA22AbiTypeValueInputModelVGSgyAA6ResultOySbAA9ECHOErrorOGcyAA16ECHONotificationVcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/createContract(registrarNameOrId:passwordOrWif:assetId:amount:assetForFee:byteCode:supportedAssetId:ethAccuracy:parameters:completion:noticeHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4ECHO15ContractsFacadeP14createContract17registrarNameOrId08passwordH3Wif05assetI06amount0L6ForFee8byteCode014supportedAssetI011ethAccuracy10parameters10completion13noticeHandlerySS_AA04PasshK0OSSSuSgSSSgSSASSbSayAA22AbiTypeValueInputModelVGSgyAA6ResultOySbAA9ECHOErrorOGcyAA16ECHONotificationVcSgtF">createContract(registrarNameOrId:passwordOrWif:assetId:amount:assetForFee:byteCode:supportedAssetId:ethAccuracy:parameters:completion:noticeHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates contract on blockchain</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createContract</span><span class="p">(</span><span class="nv">registrarNameOrId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">passwordOrWif</span><span class="p">:</span> <span class="kt"><a href="../Enums/PassOrWif.html">PassOrWif</a></span><span class="p">,</span> <span class="nv">assetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt">UInt</span><span class="p">?,</span> <span class="nv">assetForFee</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">byteCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">supportedAssetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">ethAccuracy</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/AbiTypeValueInputModel.html">AbiTypeValueInputModel</a></span><span class="p">]?,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:4ECHO10Completiona">Completion</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">noticeHandler</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:4ECHO13NoticeHandlera">NoticeHandler</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>registrarNameOrId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name or id of account that creates the contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>passwordOrWif</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Password or WIF from account for transaction signature</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>assetId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Asset of contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>byteCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Bytecode of the contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>supportedAssetId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If you dont want to link the contract with the specified asset</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ethAccuracy</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If true all balances passing to contract with ethereum accuracy</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Parameters of constructor</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback which returns an <a href="Bool">Bool</a> result of creation or error</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4ECHO15ContractsFacadeP14createContract17registrarNameOrId08passwordH3Wif05assetI06amount0L6ForFee8byteCode014supportedAssetI011ethAccuracy10completion13noticeHandlerySS_AA04PasshK0OSSSuSgSSSgSSARSbyAA6ResultOySbAA9ECHOErrorOGcyAA16ECHONotificationVcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/createContract(registrarNameOrId:passwordOrWif:assetId:amount:assetForFee:byteCode:supportedAssetId:ethAccuracy:completion:noticeHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4ECHO15ContractsFacadeP14createContract17registrarNameOrId08passwordH3Wif05assetI06amount0L6ForFee8byteCode014supportedAssetI011ethAccuracy10completion13noticeHandlerySS_AA04PasshK0OSSSuSgSSSgSSARSbyAA6ResultOySbAA9ECHOErrorOGcyAA16ECHONotificationVcSgtF">createContract(registrarNameOrId:passwordOrWif:assetId:amount:assetForFee:byteCode:supportedAssetId:ethAccuracy:completion:noticeHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates contract on blockchain</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createContract</span><span class="p">(</span><span class="nv">registrarNameOrId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">passwordOrWif</span><span class="p">:</span> <span class="kt"><a href="../Enums/PassOrWif.html">PassOrWif</a></span><span class="p">,</span> <span class="nv">assetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt">UInt</span><span class="p">?,</span> <span class="nv">assetForFee</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">byteCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">supportedAssetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">ethAccuracy</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:4ECHO10Completiona">Completion</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">noticeHandler</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:4ECHO13NoticeHandlera">NoticeHandler</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>registrarNameOrId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name or id of account that creates the contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>passwordOrWif</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Password or WIF from account for transaction signature</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>assetId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Asset of contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>byteCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Full bytecode for contract creation</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>supportedAssetId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If you dont want to link the contract with the specified asset</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ethAccuracy</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If true all balances passing to contract with ethereum accuracy</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback which returns an <a href="Bool">Bool</a> result of creation or error</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4ECHO15ContractsFacadeP12callContract17registrarNameOrId08passwordH3Wif05assetI06amount0L6ForFee07contratI006methodG00Q6Params10completion13noticeHandlerySS_AA04PasshK0OSSSuSgSSSgS2SSayAA22AbiTypeValueInputModelVGyAA6ResultOySbAA9ECHOErrorOGcyAA16ECHONotificationVcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/callContract(registrarNameOrId:passwordOrWif:assetId:amount:assetForFee:contratId:methodName:methodParams:completion:noticeHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4ECHO15ContractsFacadeP12callContract17registrarNameOrId08passwordH3Wif05assetI06amount0L6ForFee07contratI006methodG00Q6Params10completion13noticeHandlerySS_AA04PasshK0OSSSuSgSSSgS2SSayAA22AbiTypeValueInputModelVGyAA6ResultOySbAA9ECHOErrorOGcyAA16ECHONotificationVcSgtF">callContract(registrarNameOrId:passwordOrWif:assetId:amount:assetForFee:contratId:methodName:methodParams:completion:noticeHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calls to contract on blockchain</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">callContract</span><span class="p">(</span><span class="nv">registrarNameOrId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">passwordOrWif</span><span class="p">:</span> <span class="kt"><a href="../Enums/PassOrWif.html">PassOrWif</a></span><span class="p">,</span> <span class="nv">assetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt">UInt</span><span class="p">?,</span> <span class="nv">assetForFee</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">contratId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">methodName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">methodParams</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/AbiTypeValueInputModel.html">AbiTypeValueInputModel</a></span><span class="p">],</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:4ECHO10Completiona">Completion</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">noticeHandler</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:4ECHO13NoticeHandlera">NoticeHandler</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>registrarNameOrId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name or id of account that call the contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>passwordOrWif</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Password or WIF from account for transaction signature</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>assetId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Asset of contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>amount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Amount</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contratId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Id of called contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>methodName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of called method</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>methodParams</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Parameters of called method</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback which returns an <a href="Bool">Bool</a> result of call or error</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4ECHO15ContractsFacadeP12callContract17registrarNameOrId08passwordH3Wif05assetI06amount0L6ForFee07contratI08byteCode10completion13noticeHandlerySS_AA04PasshK0OSSSuSgSSSgS2SyAA6ResultOySbAA9ECHOErrorOGcyAA16ECHONotificationVcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/callContract(registrarNameOrId:passwordOrWif:assetId:amount:assetForFee:contratId:byteCode:completion:noticeHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4ECHO15ContractsFacadeP12callContract17registrarNameOrId08passwordH3Wif05assetI06amount0L6ForFee07contratI08byteCode10completion13noticeHandlerySS_AA04PasshK0OSSSuSgSSSgS2SyAA6ResultOySbAA9ECHOErrorOGcyAA16ECHONotificationVcSgtF">callContract(registrarNameOrId:passwordOrWif:assetId:amount:assetForFee:contratId:byteCode:completion:noticeHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calls to contract on blockchain</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">callContract</span><span class="p">(</span><span class="nv">registrarNameOrId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">passwordOrWif</span><span class="p">:</span> <span class="kt"><a href="../Enums/PassOrWif.html">PassOrWif</a></span><span class="p">,</span> <span class="nv">assetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt">UInt</span><span class="p">?,</span> <span class="nv">assetForFee</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">contratId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">byteCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:4ECHO10Completiona">Completion</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">noticeHandler</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:4ECHO13NoticeHandlera">NoticeHandler</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>registrarNameOrId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name or id of account that call the contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>passwordOrWif</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Password or WIF from account for transaction signature</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>assetId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Asset of contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>amount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Amount</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contratId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Id of called contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>byteCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Code which will be execute</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback which returns an <a href="Bool">Bool</a> result of call or error</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4ECHO15ContractsFacadeP13queryContract17registrarNameOrId05assetI007contratI006methodG00L6Params10completionySS_S3SSayAA22AbiTypeValueInputModelVGyAA6ResultOySSAA9ECHOErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/queryContract(registrarNameOrId:assetId:contratId:methodName:methodParams:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4ECHO15ContractsFacadeP13queryContract17registrarNameOrId05assetI007contratI006methodG00L6Params10completionySS_S3SSayAA22AbiTypeValueInputModelVGyAA6ResultOySSAA9ECHOErrorOGctF">queryContract(registrarNameOrId:assetId:contratId:methodName:methodParams:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calls contract method without changing state of blockchain</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">queryContract</span><span class="p">(</span><span class="nv">registrarNameOrId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">assetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">contratId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">methodName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">methodParams</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/AbiTypeValueInputModel.html">AbiTypeValueInputModel</a></span><span class="p">],</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:4ECHO10Completiona">Completion</a></span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>registrarNameOrId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name or id of account that call the contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>assetId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Asset of contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contratId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Id of called contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>methodName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of called method</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>methodParams</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Parameters of called method</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback which returns an <a href="Bool">Bool</a> result of call or error</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4ECHO15ContractsFacadeP13queryContract17registrarNameOrId05assetI007contratI08byteCode10completionySS_S3SyAA6ResultOySSAA9ECHOErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/queryContract(registrarNameOrId:assetId:contratId:byteCode:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4ECHO15ContractsFacadeP13queryContract17registrarNameOrId05assetI007contratI08byteCode10completionySS_S3SyAA6ResultOySSAA9ECHOErrorOGctF">queryContract(registrarNameOrId:assetId:contratId:byteCode:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calls contract method without changing state of blockchain</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">queryContract</span><span class="p">(</span><span class="nv">registrarNameOrId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">assetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">contratId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">byteCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:4ECHO10Completiona">Completion</a></span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>registrarNameOrId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name or id of account that call the contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>assetId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Asset of contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contratId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Id of called contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>byteCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Code which will be execute</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback which returns an <a href="Bool">Bool</a> result of call or error</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4ECHO15ContractsFacadeP17getContractResult08contractF2Id10completionySS_yAA0F0OyAA0eF4EnumOAA9ECHOErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/getContractResult(contractResultId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4ECHO15ContractsFacadeP17getContractResult08contractF2Id10completionySS_yAA0F0OyAA0eF4EnumOAA9ECHOErrorOGctF">getContractResult(contractResultId:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return result of contract operation call</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getContractResult</span><span class="p">(</span><span class="nv">contractResultId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:4ECHO10Completiona">Completion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/ContractResultEnum.html">ContractResultEnum</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contractResultId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Contract result identifier</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback which returns an <a href="ContractResultEnum">ContractResultEnum</a> or error</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4ECHO15ContractsFacadeP15getContractLogs10contractId9fromBlock02toJ010completionySS_S2iyAA6ResultOySayAA0E3LogVGAA9ECHOErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/getContractLogs(contractId:fromBlock:toBlock:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4ECHO15ContractsFacadeP15getContractLogs10contractId9fromBlock02toJ010completionySS_S2iyAA6ResultOySayAA0E3LogVGAA9ECHOErrorOGctF">getContractLogs(contractId:fromBlock:toBlock:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return list of contract logs</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getContractLogs</span><span class="p">(</span><span class="nv">contractId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">fromBlock</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">toBlock</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:4ECHO10Completiona">Completion</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/ContractLog.html">ContractLog</a></span><span class="p">]</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contractId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Contract id for fetching logs</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fromBlockId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Number of the earliest block to retrieve</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toBlockId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Number of the most recent block to retrieve</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback which returns an array of <a href="ContractLog">ContractLog</a> result of call or error</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4ECHO15ContractsFacadeP03getB011contractIds10completionySaySSG_yAA6ResultOySayAA12ContractInfoVGAA9ECHOErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/getContracts(contractIds:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4ECHO15ContractsFacadeP03getB011contractIds10completionySaySSG_yAA6ResultOySayAA12ContractInfoVGAA9ECHOErrorOGctF">getContracts(contractIds:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns contracts called by identifiers</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getContracts</span><span class="p">(</span><span class="nv">contractIds</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:4ECHO10Completiona">Completion</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/ContractInfo.html">ContractInfo</a></span><span class="p">]</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contractIds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Contracts identifiers for call</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback which returns an [<a href="ContractInfo">ContractInfo</a>] or error</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4ECHO15ContractsFacadeP11getContract10contractId10completionySS_yAA6ResultOyAA0E10StructEnumOAA9ECHOErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/getContract(contractId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4ECHO15ContractsFacadeP11getContract10contractId10completionySS_yAA6ResultOyAA0E10StructEnumOAA9ECHOErrorOGctF">getContract(contractId:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return full information about contract</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getContract</span><span class="p">(</span><span class="nv">contractId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:4ECHO10Completiona">Completion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/ContractStructEnum.html">ContractStructEnum</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contractId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Identifier for contract</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback which returns an <a href="ContractStructEnum">ContractStructEnum</a> or error</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://pixelplex.io" target="_blank" rel="external">pixelplex.inc</a>. All rights reserved. (Last updated: 2019-06-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

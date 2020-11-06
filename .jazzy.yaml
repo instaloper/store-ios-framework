@@ -1,0 +1,14 @@
+# About
+author: pixelplex.inc
+author_url: https://pixelplex.io
+xcodebuild_arguments: '-scheme ECHO'
+
+# Generation
+clean: true
+output: docs
+xcodebuild_arguments: [clean,build,-scheme,ECHO]
+author: pixelplex.inc
+author_url: https://pixelplex.io
+readme: README.md
+podspec: ECHO.podspec
+github_url: https://github.com/echoprotocol/echo-ios-framework
